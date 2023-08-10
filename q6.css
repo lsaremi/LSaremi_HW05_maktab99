@@ -1,0 +1,92 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.mainContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background-color: rgb(216, 216, 216);
+}
+
+.mainContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  filter: grayscale(60%);
+  background-image: url("assets/image/travel-to-dubai.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  /* height: 23rem; */
+  background-image: linear-gradient(#7876f5, #a23ce8);
+  padding: 2rem;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(241, 241, 241);
+  margin: 1rem auto 1rem;
+}
+.logoImage {
+  text-align: center;
+  margin: 0.7rem;
+}
+
+.logInText {
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.userNamePart {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.userName {
+  padding-left: 0.5rem;
+  font-size: 10px;
+}
+.underLine {
+  border-bottom: 0.5px solid;
+  margin-bottom: 1.5rem;
+}
+.logInBtn {
+  color: rgb(63, 63, 63);
+  padding: 8px 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  width: 3rem;
+  margin: 1rem auto 4rem;
+  font-size: 12px;
+  background-color: aliceblue;
+}
+
+.fgt_pass {
+  font-size: 10px;
+  margin: 0 auto;
+}
