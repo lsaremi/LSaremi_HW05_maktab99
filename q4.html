@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .notificationBox {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 20rem;
+        height: 3rem;
+        padding: 10px;
+        right: 15px;
+        top: 20px;
+        border-radius: 8px;
+        position: absolute;
+        transition: all;
+      }
+
+      .message {
+        margin: 0;
+        padding: 5px;
+        color: rgb(0, 0, 0);
+      }
+      svg {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        cursor: pointer;
+      }
+
+      .close {
+        position: relative;
+        width: 18px;
+        height: 18px;
+      }
+
+      .success {
+        background-color: #34aa34;
+        border: 1px solid rgb(0, 61, 0);
+      }
+
+      .error {
+        background-color: #df142f;
+        border: 1px solid rgb(68, 0, 0);
+      }
+
+      .warning {
+        background-color: #f0680d;
+        border: 1px solid rgb(119, 38, 0);
+      }
+    </style>
+    <script defer src="q4.js"></script>
+  </head>
+  <body>
+    <button class="notificationBtn">Show Notification</button>
+    <!-- <div class="notificationBox">
+      <p class="message"></p>
+      <div class="close">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 1L8 8M8 8L1 15M8 8L1 1M8 8L15 15"
+            stroke="#084108"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
+    </div> -->
+  </body>
+</html>
