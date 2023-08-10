@@ -29,22 +29,19 @@ document.body.appendChild(notificationBox);
 const messageElement = notificationBox.querySelector(".message");
 const btn = document.querySelector(".notificationBtn");
 
-function showNotification(message, position, background, className) {
-  // debugger;
+function showNotification(message, position, className) {
   notificationBox.style.top = position.top + "px";
   notificationBox.style.right = position.right + "px";
-  notificationBox.style.background = background;
-  notificationBox.classList.add = className;
+
+  notificationBox.classList.add(className);
   messageElement.textContent = message;
   notificationBox.style.display = "flex";
 }
 
 btn.addEventListener("click", () => {
-  // debugger;
   showNotification(
     "This is the notification message!",
     { top: 50, right: 10 },
-    "yellow",
     "success"
   );
 });

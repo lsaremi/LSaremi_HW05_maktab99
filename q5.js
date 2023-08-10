@@ -18,6 +18,6 @@ const ask = (question, yes, no) => {
 };
 ask(
   "Do you agree?",
-  (agree = () => alert("You agreed.")),
-  (disagree = () => alert("You canceled the execution."))
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
 );
